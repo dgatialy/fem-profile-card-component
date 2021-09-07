@@ -1,21 +1,43 @@
 body,
 html {
   background: var(--c-page-background);
+  display: grid;
+  grid-template-rows: 1fr auto;
+  grid-auto-columns: 1fr;
+  align-items: center;
+}
+
+a {
+  color: #000075;
+}
+
+main {
+  display: flex;
+  justify-content: center;
 }
 
 .background {
   width: 100%;
   height: 100%;
   top: 0;
+  left: 0;
   position: absolute;
 
   &__top {
     position: absolute;
     top: 0;
-    /*width: 100%;
-        height: 100%;
-        background: url('../../images/bg-pattern-top.svg') no-repeat -50% -50%;
-        */
+    width: 48%;
+    height: 65%;
+    background: url("../../images/bg-pattern-top.svg") no-repeat bottom right;
+  }
+
+  &__bottom {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 52%;
+    height: 48%;
+    background: url("../../images/bg-pattern-bottom.svg") no-repeat top left;
   }
 }
 
@@ -27,9 +49,10 @@ html {
   border-radius: 14px;
   overflow: hidden;
   margin: 3rem;
-  max-width: 450px;
+  max-width: 350px;
   background: #fff;
   z-index: 1;
+  flex: 1 1 auto;
 
   .card__top {
     height: 193px;
@@ -39,10 +62,8 @@ html {
     justify-content: center;
 
     .card__background {
-      height: 100%;
       flex: 1 1 auto;
-      margin-top: -3.3125em;
-      background: url("../../images/bg-pattern-card.svg") no-repeat 0 0;
+      background: url("../../images/bg-pattern-card.svg") no-repeat 0 -45px;
       background-size: cover;
     }
 
@@ -56,8 +77,8 @@ html {
         object-fit: cover;
       }
 
-      width: 96px;
-      height: 96px;
+      width: 104px;
+      height: 104px;
       border-radius: 50%;
       border: 5px solid #fff;
 
@@ -76,6 +97,8 @@ html {
       display: flex;
       justify-content: center;
       font-size: 1.125rem;
+      margin-bottom: 0.125rem;
+      margin-top: 1.25rem;
 
       .person-details__name {
         margin-right: 0.5625em;
@@ -105,9 +128,8 @@ html {
 }
 
 .stat {
-  text-transform: uppercase;
   text-align: center;
-  margin-right: 47px;
+  margin-right: 2.9375rem;
   font-size: 0.625rem;
 
   .stat__label {
@@ -119,8 +141,14 @@ html {
   }
 
   .stat__value {
-    margin-bottom: 6px;
-    font-size: 1rem;
+    text-transform: uppercase;
+    font-size: 1.125rem;
     font-weight: 700;
   }
+}
+
+footer {
+  text-align: center;
+  padding-bottom: 1rem;
+  font-size: 0.875rem;
 }
