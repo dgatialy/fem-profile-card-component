@@ -27,7 +27,7 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 ### Links
 
 - [Solution URL](https://github.com/dgatialy/fem-profile-card-component)
-- [Live Site URL](https://your-live-site-url.com)
+- [Live Site URL](https://suspicious-ride-6c61b3.netlify.app/)
 
 ## My process
 
