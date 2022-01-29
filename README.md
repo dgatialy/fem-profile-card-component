@@ -26,7 +26,7 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### Links
 
-- [Solution URL](https://github.com/dgatialy/fem-profile-card-component)
+- [Solution URL](https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ/hub/profile-card-component-using-flexbox-and-grid-FUlYykdW9)
 - [Live Site URL](https://suspicious-ride-6c61b3.netlify.app/)
 
 ## My process
